@@ -10,6 +10,8 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preload" as="font" type="font/woff2" href="fonts/tw-700.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="fonts/tw-400.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/tw-700-ext.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/tw-400-ext.woff2" crossorigin>
 <style>
 @font-face{font-family:"Titillium Web";font-weight:400;font-display:swap;src:url(fonts/tw-400.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:"Titillium Web";font-weight:400;font-display:swap;src:url(fonts/tw-400-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+20A0-20AB,U+20AD-20C4,U+2C60-2C7F,U+A720-A7FF}
@@ -17,7 +19,7 @@
 @font-face{font-family:"Titillium Web";font-weight:600;font-display:swap;src:url(fonts/tw-600-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+20A0-20AB,U+20AD-20C4,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:"Titillium Web";font-weight:700;font-display:swap;src:url(fonts/tw-700.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:"Titillium Web";font-weight:700;font-display:swap;src:url(fonts/tw-700-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+20A0-20AB,U+20AD-20C4,U+2C60-2C7F,U+A720-A7FF}
-:root{--granat:#394172;--blekit:#358BCB;--bp1:#2F5DAE;--bp2:#263A73;--tekst:#1E2238;--szary:#5A6075;--tlo2:#EEF2F7;--linia:#D9DFEA;--hh:76px;--gut:clamp(16px,3.4vw,56px);--w:1280px}
+:root{--granat:#394172;--blekit:#358BCB;--blekit-t:#1F67A3;--bp1:#2F5DAE;--bp2:#263A73;--tekst:#1E2238;--szary:#5A6075;--tlo2:#EEF2F7;--linia:#D9DFEA;--hh:76px;--gut:clamp(16px,3.4vw,56px);--w:1280px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
 body{margin:0;font-family:"Titillium Web",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.6;color:var(--tekst);background:#fff;overflow-x:hidden}
@@ -102,7 +104,7 @@ p{margin:0}
 .k-dalej{margin-top:auto;padding-top:12px;display:flex;align-items:center;gap:10px;font-weight:700;color:var(--granat);font-size:16px}
 .k-dalej .gw{width:9px;height:24px;transition:transform .25s}
 .k:hover .k-dalej .gw{transform:translateX(5px)}
-.k .dom{font-size:14px;color:var(--blekit);font-weight:600}
+.k .dom{font-size:14px;color:var(--blekit-t);font-weight:600}
 .pasek{margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 32px;padding:20px 28px;background:var(--tlo2);font-size:16.5px}
 .pasek a{font-weight:700;color:var(--granat)}
 /* katalogi */
@@ -122,7 +124,7 @@ p{margin:0}
 .kc figure{margin:0;aspect-ratio:5/2;overflow:hidden;background:var(--bp2)}
 .kc img{width:100%;height:100%;object-fit:cover;-webkit-user-drag:none;user-select:none}
 .kc-in{padding:18px 20px 20px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 14px;align-items:baseline}
-.kc .nr{font-weight:700;color:var(--blekit);font-size:15px;grid-row:span 2}
+.kc .nr{font-weight:700;color:var(--blekit-t);font-size:15px;grid-row:span 2}
 .kc h3{font-size:18px}
 .kc .en{font-size:14px;color:var(--szary)}
 .kc-st{margin-top:auto;padding:12px 20px;border-top:1px solid var(--linia);font-size:14px;font-weight:600;color:var(--granat);display:flex;justify-content:space-between}
@@ -146,7 +148,7 @@ p{margin:0}
 .os{list-style:none;margin:0;padding:0}
 .os li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:24px;padding:24px 0;border-top:1px solid var(--linia)}
 .os li:last-child{border-bottom:1px solid var(--linia)}
-.os .rok{font-weight:700;font-size:28px;color:var(--blekit);line-height:1.1}
+.os .rok{font-weight:700;font-size:28px;color:var(--blekit-t);line-height:1.1}
 .os h3{font-size:19px;margin-bottom:6px}
 .os p{color:var(--szary);font-size:16.5px}
 /* uzytkownicy */
@@ -160,7 +162,7 @@ p{margin:0}
 /* kontakt */
 .kont{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:48px 80px;align-items:start}
 .dz{margin-top:32px;display:grid;gap:28px}
-.dz h3{font-size:17px;color:var(--blekit);margin-bottom:6px}
+.dz h3{font-size:17px;color:var(--blekit-t);margin-bottom:6px}
 .dz p,.dz a{font-size:18px;color:var(--tekst);text-decoration:none;line-height:1.5}
 .dz a:hover{color:var(--blekit)}
 .dz .duzy{font-size:24px;font-weight:700;color:var(--granat)}
@@ -192,7 +194,7 @@ p{margin:0}
 .st-logo span{font-weight:700;font-size:22px;color:#fff;line-height:1}
 .st-logo span i{font-style:normal;color:#6FB3E6}
 .st-d{margin-top:48px;padding-top:22px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;font-size:14px}
-.st-d .uwaga{color:#9AA2C6}
+.st-d .uwaga{color:#BCC2DF}
 /* mobilny pasek */
 .mob{display:none}
 @media (max-width:1240px){
@@ -339,7 +341,7 @@ p{margin:0}
   </div>
   <div class="kier">
    <a class="k" href="#katalogi">
-    <figure><img src="img/k401-lcp.webp" width="720" height="282" alt="Rysunek techniczny systemu płytek kompresyjno-blokowanych MIKROMED" loading="lazy" decoding="async"></figure>
+    <figure><img src="img/k401-lcp.webp" srcset="img/k401-lcp-400.webp 400w, img/k401-lcp.webp 720w" sizes="(max-width:760px) 92vw, (max-width:1080px) 40vw, 420px" width="720" height="282" alt="Rysunek techniczny systemu płytek kompresyjno-blokowanych MIKROMED" loading="lazy" decoding="async"></figure>
     <div class="k-in">
      <h3>Ortopedia i traumatologia</h3>
      <p>Wkręty, płytki, druty, gwoździe śródszpikowe i krętarzowe, DHS/DCS oraz System płytek kompresyjno-blokowanych MIKROMED.</p>
@@ -347,7 +349,7 @@ p{margin:0}
     </div>
    </a>
    <a class="k" href="#kierunki">
-    <figure><img src="img/k701-zespol.webp" width="594" height="232" alt="Rysunek techniczny stabilizatora płytkowego ZESPOL" loading="lazy" decoding="async"></figure>
+    <figure><img src="img/k701-zespol.webp" srcset="img/k701-zespol-400.webp 400w, img/k701-zespol.webp 594w" sizes="(max-width:760px) 92vw, (max-width:1080px) 40vw, 420px" width="594" height="232" alt="Rysunek techniczny stabilizatora płytkowego ZESPOL" loading="lazy" decoding="async"></figure>
     <div class="k-in">
      <h3>Weterynaria</h3>
      <p>Płytki TPLO i TPO, systemy TTA i TTA VELOX, gwoździe N-LOCK, System ZESPOL i instrumentarium dla lekarzy weterynarii.</p>
@@ -355,7 +357,7 @@ p{margin:0}
     </div>
    </a>
    <a class="k" href="#produkcja">
-    <figure><img src="img/k10201-kompresyjne.webp" width="720" height="282" alt="Model wkrętów kompresyjnych kaniulowanych" loading="lazy" decoding="async"></figure>
+    <figure><img src="img/k10201-kompresyjne.webp" srcset="img/k10201-kompresyjne-400.webp 400w, img/k10201-kompresyjne.webp 720w" sizes="(max-width:760px) 92vw, (max-width:1080px) 40vw, 420px" width="720" height="282" alt="Model wkrętów kompresyjnych kaniulowanych" loading="lazy" decoding="async"></figure>
     <div class="k-in">
      <h3>Usługi produkcyjne OEM</h3>
      <p>Produkcja implantów i precyzyjnych detali na zlecenie: CNC w pięciu osiach, toczenie typu szwajcarskiego, szlifowanie, znakowanie laserowe.</p>
@@ -380,20 +382,20 @@ p{margin:0}
    <div class="strz"><button type="button" class="prev" aria-label="Poprzednie katalogi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></button><button type="button" class="next" aria-label="Następne katalogi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></button></div>
   </div>
   <div class="tor" tabindex="0" aria-label="Katalogi produktów, przewiń w bok">
-   <a class="kc" href="#"><figure><img src="img/k101-wkrety.webp" width="720" height="282" alt="Wkręty - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">1.01</span><h3>Wkręty</h3><span class="en">Screws</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
-   <a class="kc" href="#"><figure><img src="img/k102-kaniulowane.webp" width="720" height="282" alt="Wkręty kaniulowane - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">1.02</span><h3>Wkręty kaniulowane</h3><span class="en">Cannulated screws</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
-   <a class="kc" href="#"><figure><img src="img/k10201-kompresyjne.webp" width="720" height="282" alt="Wkręty kompresyjne - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">1.02.01</span><h3>Wkręty kompresyjne</h3><span class="en">Headless compression screws</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
-   <a class="kc" href="#"><figure><img src="img/k103-plytki.webp" width="720" height="282" alt="Płytki - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">1.03</span><h3>Płytki</h3><span class="en">Plates</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
-   <a class="kc" href="#"><figure><img src="img/k104-druty.webp" width="720" height="282" alt="Druty - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">1.04</span><h3>Druty</h3><span class="en">Wires</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
-   <a class="kc" href="#"><figure><img src="img/k105-gwozdzie.webp" width="720" height="282" alt="Gwoździe - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">1.05</span><h3>Gwoździe</h3><span class="en">Nails</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
-   <a class="kc" href="#"><figure><img src="img/k-gwozdzie-dzieci.webp" width="719" height="282" alt="Gwoździe śródszpikowe dla dzieci - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">1.06</span><h3>Gwoździe śródszpikowe dla dzieci</h3><span class="en">Pediatric intramedullary nails</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
-   <a class="kc" href="#"><figure><img src="img/k107-grotowkrety.webp" width="719" height="282" alt="Grotowkręty - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">1.07</span><h3>Grotowkręty</h3><span class="en">Pins</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
-   <a class="kc" href="#"><figure><img src="img/k201-dhs-dcs.webp" width="720" height="282" alt="DHS / DCS - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">2.01</span><h3>DHS / DCS</h3><span class="en">DHS / DCS</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
-   <a class="kc" href="#"><figure><img src="img/k401-lcp.webp" width="720" height="282" alt="System płytek kompresyjno-blokowanych - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">4.01</span><h3>System płytek kompresyjno-blokowanych</h3><span class="en">Locking compression plates system</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
-   <a class="kc" href="#"><figure><img src="img/k502-kretarzowe-170.webp" width="720" height="282" alt="Gwoździe krętarzowe 170 REG - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">5.02</span><h3>Gwoździe krętarzowe 170 REG</h3><span class="en">Trochanteric nails 170 REG</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
-   <a class="kc" href="#"><figure><img src="img/k504-slim.webp" width="719" height="282" alt="Gwoździe krętarzowe SLIM - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">5.04</span><h3>Gwoździe krętarzowe SLIM</h3><span class="en">Trochanteric nails SLIM</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
-   <a class="kc" href="#"><figure><img src="img/k601-klatka.webp" width="720" height="282" alt="Rekonstrukcja lejkowatej klatki piersiowej - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">6.01</span><h3>Rekonstrukcja lejkowatej klatki piersiowej</h3><span class="en">Funnel chest reconstruction</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
-   <a class="kc" href="#"><figure><img src="img/k701-zespol.webp" width="594" height="232" alt="Stabilizator płytkowy ZESPOL - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">7.01</span><h3>Stabilizator płytkowy ZESPOL</h3><span class="en">ZESPOL plate stabilizer</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
+   <a class="kc" href="#"><figure><img src="img/k101-wkrety.webp" srcset="img/k101-wkrety-400.webp 400w, img/k101-wkrety.webp 720w" sizes="(max-width:760px) 82vw, (max-width:1080px) 31vw, 300px" width="720" height="282" alt="Wkręty - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">1.01</span><h3>Wkręty</h3><span class="en">Screws</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
+   <a class="kc" href="#"><figure><img src="img/k102-kaniulowane.webp" srcset="img/k102-kaniulowane-400.webp 400w, img/k102-kaniulowane.webp 720w" sizes="(max-width:760px) 82vw, (max-width:1080px) 31vw, 300px" width="720" height="282" alt="Wkręty kaniulowane - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">1.02</span><h3>Wkręty kaniulowane</h3><span class="en">Cannulated screws</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
+   <a class="kc" href="#"><figure><img src="img/k10201-kompresyjne.webp" srcset="img/k10201-kompresyjne-400.webp 400w, img/k10201-kompresyjne.webp 720w" sizes="(max-width:760px) 82vw, (max-width:1080px) 31vw, 300px" width="720" height="282" alt="Wkręty kompresyjne - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">1.02.01</span><h3>Wkręty kompresyjne</h3><span class="en">Headless compression screws</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
+   <a class="kc" href="#"><figure><img src="img/k103-plytki.webp" srcset="img/k103-plytki-400.webp 400w, img/k103-plytki.webp 720w" sizes="(max-width:760px) 82vw, (max-width:1080px) 31vw, 300px" width="720" height="282" alt="Płytki - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">1.03</span><h3>Płytki</h3><span class="en">Plates</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
+   <a class="kc" href="#"><figure><img src="img/k104-druty.webp" srcset="img/k104-druty-400.webp 400w, img/k104-druty.webp 720w" sizes="(max-width:760px) 82vw, (max-width:1080px) 31vw, 300px" width="720" height="282" alt="Druty - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">1.04</span><h3>Druty</h3><span class="en">Wires</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
+   <a class="kc" href="#"><figure><img src="img/k105-gwozdzie.webp" srcset="img/k105-gwozdzie-400.webp 400w, img/k105-gwozdzie.webp 720w" sizes="(max-width:760px) 82vw, (max-width:1080px) 31vw, 300px" width="720" height="282" alt="Gwoździe - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">1.05</span><h3>Gwoździe</h3><span class="en">Nails</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
+   <a class="kc" href="#"><figure><img src="img/k-gwozdzie-dzieci.webp" srcset="img/k-gwozdzie-dzieci-400.webp 400w, img/k-gwozdzie-dzieci.webp 719w" sizes="(max-width:760px) 82vw, (max-width:1080px) 31vw, 300px" width="719" height="282" alt="Gwoździe śródszpikowe dla dzieci - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">1.06</span><h3>Gwoździe śródszpikowe dla dzieci</h3><span class="en">Pediatric intramedullary nails</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
+   <a class="kc" href="#"><figure><img src="img/k107-grotowkrety.webp" srcset="img/k107-grotowkrety-400.webp 400w, img/k107-grotowkrety.webp 719w" sizes="(max-width:760px) 82vw, (max-width:1080px) 31vw, 300px" width="719" height="282" alt="Grotowkręty - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">1.07</span><h3>Grotowkręty</h3><span class="en">Pins</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
+   <a class="kc" href="#"><figure><img src="img/k201-dhs-dcs.webp" srcset="img/k201-dhs-dcs-400.webp 400w, img/k201-dhs-dcs.webp 720w" sizes="(max-width:760px) 82vw, (max-width:1080px) 31vw, 300px" width="720" height="282" alt="DHS / DCS - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">2.01</span><h3>DHS / DCS</h3><span class="en">DHS / DCS</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
+   <a class="kc" href="#"><figure><img src="img/k401-lcp.webp" srcset="img/k401-lcp-400.webp 400w, img/k401-lcp.webp 720w" sizes="(max-width:760px) 82vw, (max-width:1080px) 31vw, 300px" width="720" height="282" alt="System płytek kompresyjno-blokowanych - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">4.01</span><h3>System płytek kompresyjno-blokowanych</h3><span class="en">Locking compression plates system</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
+   <a class="kc" href="#"><figure><img src="img/k502-kretarzowe-170.webp" srcset="img/k502-kretarzowe-170-400.webp 400w, img/k502-kretarzowe-170.webp 720w" sizes="(max-width:760px) 82vw, (max-width:1080px) 31vw, 300px" width="720" height="282" alt="Gwoździe krętarzowe 170 REG - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">5.02</span><h3>Gwoździe krętarzowe 170 REG</h3><span class="en">Trochanteric nails 170 REG</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
+   <a class="kc" href="#"><figure><img src="img/k504-slim.webp" srcset="img/k504-slim-400.webp 400w, img/k504-slim.webp 719w" sizes="(max-width:760px) 82vw, (max-width:1080px) 31vw, 300px" width="719" height="282" alt="Gwoździe krętarzowe SLIM - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">5.04</span><h3>Gwoździe krętarzowe SLIM</h3><span class="en">Trochanteric nails SLIM</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
+   <a class="kc" href="#"><figure><img src="img/k601-klatka.webp" srcset="img/k601-klatka-400.webp 400w, img/k601-klatka.webp 720w" sizes="(max-width:760px) 82vw, (max-width:1080px) 31vw, 300px" width="720" height="282" alt="Rekonstrukcja lejkowatej klatki piersiowej - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">6.01</span><h3>Rekonstrukcja lejkowatej klatki piersiowej</h3><span class="en">Funnel chest reconstruction</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
+   <a class="kc" href="#"><figure><img src="img/k701-zespol.webp" srcset="img/k701-zespol-400.webp 400w, img/k701-zespol.webp 594w" sizes="(max-width:760px) 82vw, (max-width:1080px) 31vw, 300px" width="594" height="232" alt="Stabilizator płytkowy ZESPOL - rysunek z okładki katalogu" loading="lazy" decoding="async" draggable="false"></figure><div class="kc-in"><span class="nr">7.01</span><h3>Stabilizator płytkowy ZESPOL</h3><span class="en">ZESPOL plate stabilizer</span></div><span class="kc-st"><span>Katalog PDF, PL/EN</span><span>Pobierz</span></span></a>
   </div>
   <p class="kat-dol">Instrukcje używania, certyfikaty i starsze rewizje katalogów: <a href="#uzytkownicy">dla użytkowników wyrobów</a>.</p>
  </div>
@@ -422,9 +424,9 @@ p{margin:0}
    </ul>
   </div>
   <div class="prod-fig">
-   <img src="img/k102-kaniulowane.webp" width="720" height="282" alt="Rysunek techniczny wkrętów kaniulowanych" loading="lazy" decoding="async">
-   <img src="img/k502-kretarzowe-170.webp" width="720" height="282" alt="Rysunek gwoździa krętarzowego z wkrętami" loading="lazy" decoding="async">
-   <img src="img/k201-dhs-dcs.webp" width="720" height="282" alt="Rysunek techniczny systemu DHS/DCS" loading="lazy" decoding="async">
+   <img src="img/k102-kaniulowane.webp" srcset="img/k102-kaniulowane-400.webp 400w, img/k102-kaniulowane.webp 720w" sizes="(max-width:760px) 92vw, (max-width:1080px) 40vw, 420px" width="720" height="282" alt="Rysunek techniczny wkrętów kaniulowanych" loading="lazy" decoding="async">
+   <img src="img/k502-kretarzowe-170.webp" srcset="img/k502-kretarzowe-170-400.webp 400w, img/k502-kretarzowe-170.webp 720w" sizes="(max-width:760px) 92vw, (max-width:1080px) 40vw, 420px" width="720" height="282" alt="Rysunek gwoździa krętarzowego z wkrętami" loading="lazy" decoding="async">
+   <img src="img/k201-dhs-dcs.webp" srcset="img/k201-dhs-dcs-400.webp 400w, img/k201-dhs-dcs.webp 720w" sizes="(max-width:760px) 92vw, (max-width:1080px) 40vw, 420px" width="720" height="282" alt="Rysunek techniczny systemu DHS/DCS" loading="lazy" decoding="async">
   </div>
  </div>
 </section>
